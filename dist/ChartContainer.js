@@ -78,7 +78,7 @@ var defaultProps = {
   collapsible: true,
   multipleSelect: false
 };
-var ChartContainer = (0, _react.forwardRef)(function (_ref, ref) {
+var ChartContainer = /*#__PURE__*/(0, _react.forwardRef)(function (_ref, ref) {
   var datasource = _ref.datasource,
       pan = _ref.pan,
       zoom = _ref.zoom,
@@ -380,12 +380,12 @@ var ChartContainer = (0, _react.forwardRef)(function (_ref, ref) {
       }
     };
   });
-  return _react.default.createElement("div", {
+  return /*#__PURE__*/_react.default.createElement("div", {
     ref: container,
     className: "orgchart-container " + containerClass,
     onWheel: zoom ? zoomHandler : undefined,
     onMouseUp: pan && panning ? panEndHandler : undefined
-  }, _react.default.createElement("div", {
+  }, /*#__PURE__*/_react.default.createElement("div", {
     ref: chart,
     className: "orgchart " + chartClass,
     style: {
@@ -395,7 +395,7 @@ var ChartContainer = (0, _react.forwardRef)(function (_ref, ref) {
     onClick: clickChartHandler,
     onMouseDown: pan ? panStartHandler : undefined,
     onMouseMove: pan && panning ? panHandler : undefined
-  }, _react.default.createElement("ul", null, _react.default.createElement(_ChartNode.default, {
+  }, /*#__PURE__*/_react.default.createElement("ul", null, /*#__PURE__*/_react.default.createElement(_ChartNode.default, {
     datasource: attachRel(ds, "00"),
     NodeTemplate: NodeTemplate,
     draggable: draggable,
@@ -403,14 +403,14 @@ var ChartContainer = (0, _react.forwardRef)(function (_ref, ref) {
     multipleSelect: multipleSelect,
     changeHierarchy: changeHierarchy,
     onClickNode: onClickNode
-  }))), _react.default.createElement("a", {
+  }))), /*#__PURE__*/_react.default.createElement("a", {
     className: "oc-download-btn hidden",
     ref: downloadButton,
     href: dataURL,
     download: download
-  }, "\xA0"), _react.default.createElement("div", {
+  }, "\xA0"), /*#__PURE__*/_react.default.createElement("div", {
     className: "oc-mask ".concat(exporting ? "" : "hidden")
-  }, _react.default.createElement("i", {
+  }, /*#__PURE__*/_react.default.createElement("i", {
     className: "oci oci-spinner spinner"
   })));
 });
